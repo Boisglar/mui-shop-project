@@ -5,6 +5,8 @@ const Search = (props) => {
 
   return (
     <TextField
+      fullWidth="100%"
+      size="small"
       label="search"
       type="search"
       value={value}

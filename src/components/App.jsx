@@ -70,12 +70,8 @@ const App = () => {
     <>
       <Header handeleCard={() => setCardOpen(true)} orderLen={order.length} />
       <Container sx={{ mt: '1rem' }}>
-        <div className="App">
-          <div className="container">
-            <Search value={search} onChange={handleChange} />
-            <GoodsList goods={products} setOrder={addToOrder} />
-          </div>
-        </div>
+        <Search value={search} onChange={handleChange} />
+        <GoodsList goods={products} setOrder={addToOrder} />
       </Container>
       <Basket
         cardOpen={isCardOpen}
